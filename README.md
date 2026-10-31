@@ -2,6 +2,8 @@
 
 Un punto di partenza per ricostruire la tua stanza e provare a spostare i mobili. L'app mostra una pianta 2D e una vista 3D. La stanza iniziale è vuota e usa misure di esempio: sostituiscile con quelle reali.
 
+Su telefono usa l'app in orizzontale. Il pulsante in alto a destra apre il pannello sopra la vista; Pianta e 3D restano accessibili a pannello chiuso. Nella vista 3D il joystick sinistro muove e quello destro orienta la visuale. In verticale appare un invito a ruotare il telefono.
+
 ## Comincia con il tuo agente AI
 
 Copia il link di questa repository e invialo al tuo agente AI con questo messaggio:
