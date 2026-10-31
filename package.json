@@ -1,1 +1,1 @@
-{"name":"room-planner-template","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"vite build"},"dependencies":{"three":"^0.180.0"},"devDependencies":{"vite":"^7.1.12"}}
+{"name":"room-planner-template","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"vite build","test:mobile":"node tests/mobile.mjs"},"dependencies":{"three":"^0.180.0"},"devDependencies":{"vite":"^7.1.12"}}
