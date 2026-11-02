@@ -32,6 +32,10 @@ Leggi questa sezione anche se l'utente ha scritto soltanto «fallo». Il progett
 - Usa le informazioni per adattare la stanza e realizzare la rappresentazione degli elementi, estendendo il codice quando necessario. Mantieni le funzioni utili e verifica che l'app si avvii e che le dimensioni e le posizioni siano coerenti. Le collisioni e le distanze vanno verificate: il prototipo non è uno strumento di progettazione certificato.
 - Spiega come aprire e usare il risultato. Non pubblicare foto, misure o modifiche personali senza il consenso dell'utente. Ricorda che il salvataggio corrente è locale al browser.
 
+## Texture e materiali facoltativi
+
+In [risorse/materiali-512](risorse/materiali-512/README.md) trovi una piccola raccolta di texture CC0 per legno, tessuto, intonaco e piastrelle. Puoi chiedere al tuo agente di applicarle se vuoi più realismo: il progetto non le usa automaticamente. Puoi anche cercare online altri modelli 3D, oggetti e materiali, verificando la licenza di ciascuna risorsa prima di usarla o ridistribuirla.
+
 ## Avvio per chi sviluppa
 
 Con Node.js installato:
