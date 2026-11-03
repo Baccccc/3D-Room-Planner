@@ -1,6 +1,6 @@
 import { createMobileControls } from './mobile-controls.js';
 
-export function initMobile({ camera, controls, getRoom }) {
+export function initMobile({ camera, controls, getRoom, rotateSelected }) {
   const main = document.querySelector('main');
   const aside = main.querySelector('aside');
   const article = main.querySelector('article');
@@ -28,12 +28,15 @@ export function initMobile({ camera, controls, getRoom }) {
   const tabs = document.createElement('div');
   tabs.className = 'mobile-view-tabs';
   tabs.innerHTML = '<button data-mobile-view="plan" class="active">Pianta</button><button data-mobile-view="walk">3D</button>';
-  const rotate = document.createElement('div');
-  rotate.className = 'rotate-notice';
-  rotate.innerHTML = '<div><span aria-hidden="true">↻</span><h1>Ruota il telefono</h1><p>Usa Room Planner in orizzontale.</p></div>';
+  const planRotate = document.createElement('button');
+  planRotate.className = 'plan-rotate';
+  planRotate.type = 'button';
+  planRotate.textContent = '↻ Ruota';
+  planRotate.setAttribute('aria-label', 'Ruota l’elemento selezionato di 90 gradi');
+  planRotate.onclick = () => rotateSelected();
+  planPanel.append(planRotate);
   main.append(menu, backdrop, tabs);
   aside.prepend(close);
-  document.body.append(rotate);
 
   function setDrawer(open) {
     main.classList.toggle('mobile-drawer-open', open);
@@ -102,8 +105,6 @@ export function initMobile({ camera, controls, getRoom }) {
       const speed = 1.4;
       const forward = -sticks.move.y;
       const side = sticks.move.x;
-      yaw -= sticks.look.x * dt * 1.8;
-      pitch = Math.max(-1.3, Math.min(1.3, pitch - sticks.look.y * dt * 1.4));
       const length = Math.max(1, Math.hypot(forward, side));
       camera.position.x = Math.max(.12, Math.min(room.width / 100 - .12, camera.position.x + (-Math.sin(yaw) * forward + Math.cos(yaw) * side) / length * speed * dt));
       camera.position.z = Math.max(.12, Math.min(room.depth / 100 - .12, camera.position.z + (-Math.cos(yaw) * forward - Math.sin(yaw) * side) / length * speed * dt));
