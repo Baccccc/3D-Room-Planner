@@ -1,10 +1,10 @@
-// Two independent touch sticks. Values stay in [-1, 1] until the pointer is released.
+// One movement stick; the view is controlled by dragging the 3D canvas.
 export function createMobileControls(container) {
-  const state = { move: { x: 0, y: 0 }, look: { x: 0, y: 0 } };
+  const state = { move: { x: 0, y: 0 } };
   const wrapper = document.createElement('div');
   wrapper.className = 'mobile-sticks';
 
-  for (const [kind, label] of [['move', 'Muoviti'], ['look', 'Visuale']]) {
+  for (const [kind, label] of [['move', 'Muoviti']]) {
     const stick = document.createElement('div');
     stick.className = `mobile-stick mobile-stick-${kind}`;
     stick.setAttribute('role', 'group');

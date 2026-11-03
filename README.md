@@ -2,7 +2,7 @@
 
 Un punto di partenza per ricostruire la tua stanza e provare a spostare i mobili. L'app mostra una pianta 2D e una vista 3D. La stanza iniziale è vuota e usa misure di esempio: sostituiscile con quelle reali.
 
-Su telefono usa l'app in orizzontale. Il pulsante in alto a destra apre il pannello sopra la vista; Pianta e 3D restano accessibili a pannello chiuso. Nella vista 3D il joystick sinistro muove e quello destro orienta la visuale. In verticale appare un invito a ruotare il telefono.
+Su telefono puoi usare l'app in verticale o in orizzontale. Il pulsante in alto a destra apre un pannello dal basso sopra la vista. La pianta sfrutta la larghezza o l'altezza disponibile e ruota quando una stanza rettangolare si adatta meglio allo schermo. La levetta muove la camera, mentre trascinando sulla vista 3D orienti lo sguardo. Il pulsante «Ruota» è nell'angolo della pianta. Quando aggiungi un tavolo con sedie, le sedie restano collegate al tavolo; la sezione «Aperture» le allontana o le riavvicina. Puoi anche aggiungere mobili con ante e aprirli dalla stessa sezione.
 
 ## Comincia con il tuo agente AI
 
@@ -23,7 +23,7 @@ Condividi foto e misure solo se sei a tuo agio: possono mostrare informazioni pr
 
 ## Istruzioni per l'agente AI
 
-Leggi questa sezione anche se l'utente ha scritto soltanto «fallo». Il progetto è un prototipo web con Vite e Three.js: una pianta interattiva, una vista 3D, dimensioni modificabili, mobili aggiungibili e salvataggio nel browser. La stanza iniziale è un esempio generico, non rappresenta la stanza dell'utente. Supporta direttamente stanze rettangolari; forme diverse, aperture, elementi fissi e modelli dettagliati richiedono modifiche al codice.
+Leggi questa sezione anche se l'utente ha scritto soltanto «fallo». Il progetto è un prototipo web con Vite e Three.js: una pianta interattiva, una vista 3D, dimensioni modificabili, mobili aggiungibili e salvataggio nel browser. La stanza iniziale è un esempio generico, non rappresenta la stanza dell'utente. Supporta direttamente stanze rettangolari, tavoli con sei sedie collegate e mobili con ante semplificate; forme diverse, porte, finestre, elementi fissi e modelli dettagliati richiedono modifiche al codice. L'asse da stiro si aggiunge solo su richiesta dell'utente.
 
 - Rispondi nella lingua dell'utente, con parole comuni e frasi brevi. Spiega cosa fare un passo alla volta, senza dare per scontate competenze tecniche. Non è necessaria alcuna skill esterna.
 - Chiedi prima **larghezza, lunghezza e altezza complessive della stanza**. Se non sono state fornite, ricordale esplicitamente anche quando l'utente ha già mandato foto e misure dei mobili. Per stanze irregolari chiedi misure delle pareti e uno schema delle rientranze.
